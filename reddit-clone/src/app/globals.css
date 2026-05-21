@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+
+  body {
+    color: #1c1c1c;
+  }
+
+  a { color: inherit; }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium transition-colors cursor-pointer;
+  }
+  .btn-primary {
+    @apply btn bg-reddit-orange text-white hover:bg-orange-600;
+  }
+  .btn-outline {
+    @apply btn border border-reddit-orange text-reddit-orange hover:bg-orange-50;
+  }
+  .btn-ghost {
+    @apply btn text-reddit-muted hover:bg-reddit-border hover:text-gray-700;
+  }
+  .card {
+    @apply bg-white border border-reddit-border rounded-md;
+  }
+  .input {
+    @apply w-full border border-reddit-border rounded px-3 py-2 text-sm focus:outline-none focus:border-reddit-blue transition-colors;
+  }
+  .label {
+    @apply block text-xs font-medium text-gray-600 mb-1;
+  }
+  .skeleton {
+    @apply animate-pulse bg-gray-200 rounded;
+  }
+}
