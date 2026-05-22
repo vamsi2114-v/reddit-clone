@@ -14,6 +14,7 @@ const nextConfig = {
   experimental: {
     serverComponentsExternalPackages: ['@prisma/client'],
   },
+  staticPageGenerationTimeout: 0,
 }
 
 module.exports = nextConfig
