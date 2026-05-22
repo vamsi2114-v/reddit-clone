@@ -106,3 +106,4 @@ export default async function CommunityPage({ params, searchParams }: Props) {
     </div>
   )
 }
+export const dynamic = 'force-dynamic' 

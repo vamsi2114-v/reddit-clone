@@ -39,3 +39,4 @@ export default async function PostPage({ params }: Props) {
     </div>
   )
 }
+export const dynamic = 'force-dynamic' 

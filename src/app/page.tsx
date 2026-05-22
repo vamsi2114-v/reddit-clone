@@ -73,3 +73,4 @@ export default async function HomePage({ searchParams }: Props) {
     </div>
   )
 }
+export const dynamic = 'force-dynamic' 
